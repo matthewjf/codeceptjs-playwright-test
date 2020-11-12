@@ -1,0 +1,16 @@
+{
+  "name": "playwright-test",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "@codeceptjs/ui": "^0.4.2",
+    "codeceptjs": "^3.0.1",
+    "playwright": "^1.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npx codeceptjs run -c codecept.conf.js --steps"
+  },
+  "author": "",
+  "license": "ISC"
+}
