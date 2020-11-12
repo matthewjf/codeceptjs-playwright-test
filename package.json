@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "npx codeceptjs run -c codecept.conf.js --steps"
+    "test": "npx codeceptjs run"
   },
   "author": "",
   "license": "ISC"
