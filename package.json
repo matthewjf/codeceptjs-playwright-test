@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "@codeceptjs/ui": "^0.4.2",
     "codeceptjs": "^3.0.1",
     "playwright": "^1.5.2"
   },
