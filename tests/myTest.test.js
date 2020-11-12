@@ -1,11 +1,17 @@
 Feature('My Feature');
 
-Scenario('usePlaywrightTo', async ({ I }) => {
-  I.amOnPage('https://wikipedia.org');
+Scenario('without usePlaywrightTo', async ({ I }) => {
+  I.amOnPage('http://whatsmyuseragent.org/');
 
-  I.usePlaywrightTo('test', async (Playwright) => {
-    await Playwright.click('reload')
+  I.see('USER AGENT');
+});
+
+Scenario('with usePlaywrightTo', async ({ I }) => {
+  I.amOnPage('https://wikipedia.org/');
+
+  I.usePlaywrightTo('test', async ({ page }) => {
+    await page.goto('http://whatsmyuseragent.org/');
   });
 
-  I.amOnPage('https://www.google.com');
+  I.see('USER AGENT');
 });
